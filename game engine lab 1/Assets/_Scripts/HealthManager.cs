@@ -18,7 +18,7 @@ public class HealthManager : MonoBehaviour
     public void ChangeHealth(int healthValue)
     {
         health += healthValue;
-        Debug.Log(health);
+        Debug.Log("Health:" + health);
        
     }
    void Update() 

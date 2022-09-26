@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
@@ -31,6 +30,18 @@ public class PlayerController : MonoBehaviour
 
 
     public float force = 100;
+
+    private bool hasKey = false;
+
+    public void SetKey(bool state)
+    {
+        hasKey = state;
+    }
+
+    public bool GetKey()
+    {
+        return hasKey;
+    }
 
     private void OnEnable()
     {
